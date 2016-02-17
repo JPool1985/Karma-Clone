@@ -14,7 +14,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 	box-sizing: border-box;
@@ -45,11 +44,14 @@ time, mark, audio, video {
  	font-size: 16px;
  	color: #838994;
  	letter-spacing: 0.03em;
- 	-webkit-font-smoothing: antialiased;
+ 	-webkit-font-smoothing: antialiased !important;
+
  }
 
  *, *:before, *:after {
  	box-sizing: :inherit;
+ 	-webkit-font-smoothing: antialiased;
+ 	font-weight: 300;
  }
  .top-navigation{
  	background-color: #FFF;
@@ -107,46 +109,100 @@ time, mark, audio, video {
  	.introduction h1, .introduction h3 {
  		font-weight: 300;
  	}
- 	button{
+ 	button {
  		text-shadow: none;
  		border-style: none;
  		border-radius: 4px;
  		padding: 1rem 1.5rem;
  		margin: 0 auto;
- 		background-color: red;
+ 		background-color: #f15a29;
+ 		border-color: #f15a29;
  		font-size: 1.125em;
  		color: white;
  		margin-top: 1em
  	}
+ 	button:hover {
+ 		background-color: red;
+ 		cursor: pointer;
+ 	}
  	.cases{
- 		background-color: white
+ 		background-color: white;
+ 		padding-bottom: 5rem;
  	}
  	.cases .content h2{
  		text-align: center;
- 		margin: 10rem;
+ 		margin: 1.625rem 0 3.125rem;
+ 		font-size: 2.75rem;
+ 		font-weight: 300;
+ 		color: black;
  	}
  	.cases .content{
- 		width: 60%;
+ 		width: 60rem;
  		margin-left: 0;
  		margin-right: 0;
  		padding: 0;
+ 		padding-top: 6em;
  		margin: 0 auto;
+ 		height: 28em;
  	}
  	.cases .devices {
- 		width: 25%;
+ 		width: 33.33333%;
  		display: inline-block;
  		/* styles to assist with debugging */
  		box-sizing: border-box;
  		height: 4em;
  		text-align: center;
+ 		float: left;
  	}
  	/*.devices img {
  		height: 4em !important;
  		width: 20em !important;
  	}
-*/ 	.devices .caption h3{
+ 	*/ 	.devices .caption h3{
  		font-weight: 400;
  		font-size: 1.563rem;
  		margin: 2.5rem 0px 1.875rem;
  		color: black
+ 	}
+ 	.social .content{
+ 		width: 60rem;
+ 		margin: 0 auto;
+ 		text-align: center;
+ 		/*height: 10em;
+ 		border-radius: 50%;
+ 		border: 1px solid gray;*/
+ 	}
+ 	.social hr{
+ 		width: 100%;
+ 		border-top: 1px solid #eaebec;
+ 		margin-top:1.313em;
+ 		margin-bottom: 1em;
+ 	}
+ 	.social .icons > li {
+ 		border-radius: 1.25rem;
+ 		width: 2.5rem;
+ 		height: 2.5rem;
+ 		display: inline-block;
+ 		margin: 1.25rem 5px;
+ 		border: 1px solid #eaebec;
+ 		padding: 0.625rem 0;
+ 		text-align: center;
+ 	}
+ 	.social .icons .twitter {
+ 		color: #55acee;
+ 	}
+ 	.social .icons .facebook {
+ 		color: #4c66a4;
+ 	}
+ 	.social .icons .instagram {
+ 		color: #3f729b;
+ 	}
+ 	.content > h5 {
+ 		color: black;
+ 	}
+ 	.social p {
+ 		font-size: 0.9rem;
+ 		font-weight: 300;
+ 		color: #838994;
+ 		padding-bottom: 12em;
  	}
